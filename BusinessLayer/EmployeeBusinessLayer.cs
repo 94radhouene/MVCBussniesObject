@@ -58,6 +58,7 @@ namespace BusinessLayer
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter paramName = new SqlParameter();
+               // command.Parameters.Add(new SqlParameter("@DefaultDate ", DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss")));
                 paramName.ParameterName = "@Name";
                 paramName.Value = employee.Name;
                 cmd.Parameters.Add(paramName);
